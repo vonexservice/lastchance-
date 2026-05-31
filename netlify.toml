@@ -7,47 +7,6 @@
   publish = "dist"
 
 # ============================================================
-# PRERENDER PLUGIN — all routes listed so bots get full HTML
-# ============================================================
-[[plugins]]
-  package = "netlify-plugin-prerender"
-
-  [plugins.inputs]
-    prerender = [
-      "/",
-      "/services",
-      "/brands",
-      "/ink-toner",
-      "/lease-rental",
-      "/repairs",
-      "/managed-print",
-      "/office-equipment",
-      "/it-managed-services",
-      "/kyocera-authorized-dealer-saskatoon",
-      "/kyocera-managed-print-services-saskatoon",
-      "/printer-repair-saskatoon",
-      "/copier-service-saskatoon",
-      "/hp-printer-service-saskatoon",
-      "/lexmark-printer-service-saskatoon",
-      "/printer-maintenance-contract-saskatoon",
-      "/printer-repair-regina",
-      "/copier-service-regina",
-      "/toner-supplier-regina",
-      "/about",
-      "/contact",
-      "/blog",
-      "/blog/signs-business-needs-managed-print-services",
-      "/blog/emergency-printer-repair-guide",
-      "/blog/law-firm-printer-leasing-managed-print",
-      "/blog/medical-clinic-printer-leasing-managed-print",
-      "/blog/smb-printer-leasing-managed-print-guide",
-      "/blog/konica-minolta-vs-hp-printer-comparison",
-      "/blog/reduce-printing-costs-saskatchewan-business",
-      "/blog/complete-printer-maintenance-guide",
-      "/blog/toner-vs-ink-business-guide"
-    ]
-
-# ============================================================
 # REDIRECTS — order matters, first match wins
 # ============================================================
 
