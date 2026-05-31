@@ -26,23 +26,27 @@
         - <meta property="og:*">
         - <meta name="twitter:*">
         - <link rel="alternate" hreflang="*">
-        - <script type="application/ld+json"> (any structured data)
-      All of the above are managed PER PAGE by prerender.js at build time.
-      Adding them here causes duplicate tag and schema validation errors.
-      The single fallback <title> below is replaced at build time.
+        - <script type="application/ld+json">
+      Managed by prerender.js
     -->
+
     <title>Vonex Business Solutions | Managed Print &amp; Equipment Leasing – Saskatchewan</title>
 
-    <!-- Fonts — non-blocking, preconnect first then preload -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" /></noscript>
-
-    <!-- NOTE: Do NOT add a hardcoded <link rel="stylesheet"> for Vite CSS here.
-         Vite automatically injects the correct hashed CSS bundle at build time.
-         A hardcoded path causes a duplicate CSS bundle on the critical path,
-         increasing page load latency. -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <!-- Preload critical images -->
     <link rel="preload" as="image" href="/6 copy copy.png" />
@@ -56,12 +60,11 @@
       gtag('js', new Date());
       gtag('config', 'G-7XYED2GPPK');
     </script>
-    <script type="module" crossorigin src="/assets/index-Bx4aRiUb.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-Cwrr0w9t.js">
-    <link rel="modulepreload" crossorigin href="/assets/router-DSFXyrIX.js">
-    <link rel="modulepreload" crossorigin href="/assets/icons-B_fOkG9D.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-CoxyqpKH.css">
+
+    <!-- Vite Entry Point -->
+    <script type="module" src="/src/main.tsx"></script>
   </head>
+
   <body>
     <div id="root"></div>
   </body>
